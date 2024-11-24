@@ -1,0 +1,367 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header {
+    background-color: white;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .logo {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 70%; 
+    object-fit: contain; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3), /* Bayangan utama */
+              inset 0px -2px 4px rgba(255, 255, 255, 0.5); /* Efek timbul */
+    background-color: white 
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
+  
+
+  /* Style untuk Navigasi */
+  nav {
+    background-color: #003f88;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav ul li:hover > a {
+    background-color: #002a5d;
+  }
+  
+  .dropdown {
+    display: none;
+    position:absolute;
+    background-color: #002a5d;
+    width: 200px;
+    z-index: 1;
+  }
+  
+  .dropdown li {
+    display: block;
+    margin: 0;
+  }
+  
+  .dropdown li a {
+    display: block;
+    padding: 10px;
+  }
+  
+  .dropdown li a:hover {
+    background-color: #001833;
+  }
+  
+  nav ul li:hover .dropdown {
+    display: block;
+  }
+  
+  /* Style untuk Konten Sejarah dan Visi Misi */
+  #sejarah, #visi, #misi {
+    padding: 30px 0;
+  }
+  
+  .sejarah-container, .visi-container, .misi-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .sejarah-container h3, .visi-container h3, .misi-container h3 {
+    font-size: 24px;
+    color: #003f88;
+    margin-bottom: 10px;
+  }
+  
+  .sejarah-container p, .visi-container p, .misi-container p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Membuat tiga kolom untuk Sejarah dan Visi Misi */
+  #sejarah, #visi, #misi {
+    display: flex;
+    justify-content:space-evenly;
+    background-image: url(https://img.freepik.com/free-photo/building-with-white-walls_1127-2272.jpg?uid=R174625893&ga=GA1.1.951080393.1709835900&semt=ais_hybrid);
+  }
+  
+  .sejarah-container, .visi-container, .misi-container {
+    width: 48%; /* Membagi tiga kolom */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }  
+  
+  /* Hero Section */
+  .hero {
+    background: url('https://bulkinside.com/wp-content/uploads/2023/01/Pharma-BinCloud.png') no-repeat center center/cover;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    border-radius: 15px;
+  }
+  
+  /* About Section */
+  .about-container {
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+    align-items: center;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+
+  p{
+    font-size: 15px;
+  }
+
+  .about-image img {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 400px;
+  }
+  
+  /* Styling untuk Produk */
+  .Produk h2 {
+    color: #003f88; 
+  }
+  
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #003f88;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .product-item {
+    width: 180px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3), /* Bayangan utama */
+              inset 0px -2px 4px rgba(255, 255, 255, 0.5); /* Efek timbul */
+  }
+  
+  .product-item img:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
+
+  .product-details {
+    padding-top: 5px;
+  }
+  
+  .product-description {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 15px; /* Memberikan jarak antara deskripsi dan harga */
+  }
+  
+  .product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: orange;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: #f0f0f0; 
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  button {
+    background-color: #32577d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #778ca0;
+  }
+
+  footer {
+    color: black;
+    font-family: Arial, sans-serif;
+    padding: 10px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-logo {
+    width: 35%; 
+    height: 35%; 
+    margin-bottom: 20px;
+    border-radius: 50%; 
+    object-fit: contain; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3), /* Bayangan utama */
+              inset 0px -2px 4px rgba(255, 255, 255, 0.5); /* Efek timbul */
+    background-color: white 
+  }
+  
+  .footer-logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
+  
+  .footer-section h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+  }
+
+  .footer-section a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: #003f88;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #baaa04;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    color:#fff;
+    background-color: #003f88;
+    padding: 30px;
+    font-size: 0.9em;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+
